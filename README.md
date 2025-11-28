@@ -31,7 +31,12 @@ A Full-stack MEAN(MongoDB, Express.js, Angular, Node.js) application built with 
 - MongoDB
 
 2.Containerization & Deployment
--Create Docker files for both the frontend and backend.                                                                                                                                                                       
+-Create Docker files for both the frontend and backend.
+<img width="3200" height="2000" alt="Screenshot (591)" src="https://github.com/user-attachments/assets/18d24728-a925-4048-9d28-b7775088767c" />
+<img width="3200" height="2000" alt="Screenshot (590)" src="https://github.com/user-attachments/assets/6bfd5bdf-e8ee-4479-b2f5-71c11ae411a5" />
+<img width="3200" height="2000" alt="Screenshot (597)" src="https://github.com/user-attachments/assets/c4496ebb-6515-47a1-a05a-06901c754856" />
+<img width="3200" height="2000" alt="Screenshot (596)" src="https://github.com/user-attachments/assets/d8004732-f0f5-4429-a103-a257fe6d6951" />
+
 -Build and push Docker images to your Docker Hub account.                                                                                                                                                                     
 -Set up a new Ubuntu virtual machine on any cloud platform.                                                                                                                                                                   
 -Use Docker Compose to deploy the application on this VM.                                                                                                                                                                     
