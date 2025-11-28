@@ -31,11 +31,11 @@ A Full-stack MEAN(MongoDB, Express.js, Angular, Node.js) application built with 
 - MongoDB
 
 2.Containerization & Deployment
--Create Docker files for both the frontend and backend.
--Build and push Docker images to your Docker Hub account.
--Set up a new Ubuntu virtual machine on any cloud platform 
--Use Docker Compose to deploy the application on this VM.
--the official MongoDB Docker image as part of your Docker Compose setup.
+-Create Docker files for both the frontend and backend.                                                                                                                                                                       
+-Build and push Docker images to your Docker Hub account.                                                                                                                                                                     
+-Set up a new Ubuntu virtual machine on any cloud platform.                                                                                                                                                                   
+-Use Docker Compose to deploy the application on this VM.                                                                                                                                                                     
+-the official MongoDB Docker image as part of your Docker Compose setup.                                                                                                                                                       
 mean-app/
 │
 ├── backend/
