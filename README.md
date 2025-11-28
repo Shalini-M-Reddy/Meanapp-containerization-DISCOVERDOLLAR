@@ -1,9 +1,29 @@
 # MEAN Stack Application
-A Full-stack MEAN(MongoDB, Express.js, Angular, Node.js) application built with scalable architecture and production-ready practices. This project follows modular coding standards, secure API design, and clean UI patterns suitable for real-world deployment.
+A Full-stack MEAN(MongoDB, Express.js, Angular, Node.js) application built with scalable architecture and production-ready practices. This project follows modular coding standards, secure API design, and clean UI patterns suitable for real-world deployment. 
 
-1.Repository Setup                                                                                                                                                                                                            
--Create a new GitHub repository for this project                                                                                                                                                                              
--Push the complete code to the repository.                                                                                                                                                                                    
+1. This repository contains a MEAN stack application containerized with Docker and deployed using Docker Compose and GitHub Actions. An Nginx reverse proxy exposes the application on port **80**.
+## Contents
+- `backend/` — Node.js/Express backend
+- `frontend/` — Angular/React frontend
+- `docker-compose.yml` — Compose file (MongoDB, backend, frontend, Nginx)
+- `nginx/default.conf` — Nginx reverse proxy config
+- `.github/workflows/ci-cd.yml` — GitHub Actions workflow (build, push, deploy)
+
+---
+## Prerequisites
+- Git installed
+- Docker & Docker Compose installed locally (for local testing) and on the VM (for production)
+- Docker Hub account
+- GitHub repository
+- SSH access to the VM with a key pair
+- 
+---
+## Local setup & test
+1. Clone the repo (if not already):
+```bash
+git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>                                                                                                                                         
+
 
 ## Features
 ### **Frontend (Angular)**
@@ -51,20 +71,19 @@ A Full-stack MEAN(MongoDB, Express.js, Angular, Node.js) application built with 
 <img width="3200" height="2000" alt="Screenshot (598)" src="https://github.com/user-attachments/assets/1f0e3d8c-3d52-4dfc-ad30-87ce680025ee" />
 
 mean-app/                                                                                                                                                                                                                     
-│                                                                                                                                                                                                                             
-├── backend/                                                                                                                                                                                                                  
-│   ├── Dockerfile                                                                                                                                                                                                            
-│   └── (Node.js/Express app files)                                                                                                                                                                                           
-│                                                                                                                                                                                                                             
-├── frontend/                                                                                                                                                                                                                 
-│   ├── Dockerfile                                                                                                                                                                                                            
-│   └── (Angular/React app files)                                                                                                                                                                                             
-│                                                                                                                                                                                                                             
+│                                                                                                                                                                                                                            
+├── backend/                                                                                                                                                                                                                 
+│   ├── Dockerfile                                                                                                                                                                                                           
+│   └── (Node.js/Express app files)                                                                                                                                                                                          
+│                                                                                                                                                                                                                            
+├── frontend/                                                                                                                                                                                                                
+│   ├── Dockerfile                                                                                                                                                                                                           
+│   └── (Angular/React app files)                                                                                                                                                                                            
+│                                                                                                                                                                                                                            
 └── docker-compose.yml(with database set up)                                                                                                                                                                                  
-
-3.CI/CD Pipeline Configuration                                                                                                                                                                                                -Use GitHub Actions or Jenkins to implement a CI/CD pipeline.                                                                                                                                                                
--Build updated Docker images when changes are pushed to GitHub.                                                                                                                                                               
--Push those images to Docker Hub.                                                                                                                                                                                             
+3.CI/CD Pipeline Configuration                                                                                                                                                                                                -Use GitHub Actions or Jenkins to implement a CI/CD pipeline.                                                                                                                                                               
+-Build updated Docker images when changes are pushed to GitHub.                                                                                                                                                              
+-Push those images to Docker Hub.                                                                                                                                                                                            
 -Automatically pull the latest images and restart containers on the VM.                                                                                                                                                        
 <img width="3200" height="2000" alt="Screenshot (605)" src="https://github.com/user-attachments/assets/e946b566-d83f-4e92-bf8f-0c4d044f50f7" />
 <img width="3200" height="2000" alt="Screenshot (604)" src="https://github.com/user-attachments/assets/08abe22f-719f-4c43-8148-e40281ce9906" />
@@ -77,5 +96,14 @@ mean-app/
 <img width="3200" height="2000" alt="Screenshot (609)" src="https://github.com/user-attachments/assets/896ecd98-62d8-4294-b508-9bd6d21cd646" />
 <img width="3200" height="2000" alt="Screenshot (608)" src="https://github.com/user-attachments/assets/c1029d91-8506-4ecd-b7fa-f78689b70a58" />
 
-
-Set up a new Ubuntu virtual machine on any cloud platform (AWS, Azure, or similar).                                                                                                                                              Failed to do this step because i dont have subscription for any cloud.
+3.Prepare VM for deployment
+ -SSH into VM: ssh user@vm_ip                                                                                                                                                                                                 -Install Docker & Docker Compose (Ubuntu example): sudo apt update -y                                                                                                                                                       
+                                                    sudo apt install -y docker.io docker-compose                                                                                                                             
+                                                    sudo systemctl enable --now docker                                                                                                                                       
+                                                    sudo usermod -aG docker $USER                                                                                                                                             -Clone repo on VM (or use scp to copy files): cd ~mkdir -p mean-app                                                                                                                                                         
+                                               cd mean-app                                                                                                                                                                   
+                                               git clone https://github.com/<your-username>/<your-repo>.git .
+-Start containers on VM (first time): docker-compose pull                                                                                                                                                                    
+                                      docker-compose up -d --build
+-Verify: docker ps                                                                                                                                                                                                           
+         curl http://localhost/
