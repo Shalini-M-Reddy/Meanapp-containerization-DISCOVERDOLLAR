@@ -62,4 +62,7 @@ mean-app/
 │                                                                                                                                                                                                                             
 └── docker-compose.yml(with database set up)                                                                                                                                                                                  
 
-3.CI/CD Pipeline Configuration
+3.CI/CD Pipeline Configuration                                                                                                                                                                                                -Use GitHub Actions or Jenkins to implement a CI/CD pipeline.                                                                                                                                                                
+-Build updated Docker images when changes are pushed to GitHub.                                                                                                                                                               
+-Push those images to Docker Hub.                                                                                                                                                                                             
+-Automatically pull the latest images and restart containers on the VM.                                                                                                                                                        
