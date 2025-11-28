@@ -21,8 +21,7 @@ A Full-stack MEAN(MongoDB, Express.js, Angular, Node.js) application built with 
 1. Clone the repo (if not already):
 ```bash
 git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>                                                                                                                                         
-
+cd <your-repo>
 
 ## Features
 ### **Frontend (Angular)**
