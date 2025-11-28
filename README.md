@@ -66,3 +66,13 @@ mean-app/
 -Build updated Docker images when changes are pushed to GitHub.                                                                                                                                                               
 -Push those images to Docker Hub.                                                                                                                                                                                             
 -Automatically pull the latest images and restart containers on the VM.                                                                                                                                                        
+<img width="3200" height="2000" alt="Screenshot (605)" src="https://github.com/user-attachments/assets/e946b566-d83f-4e92-bf8f-0c4d044f50f7" />
+<img width="3200" height="2000" alt="Screenshot (604)" src="https://github.com/user-attachments/assets/08abe22f-719f-4c43-8148-e40281ce9906" />
+<img width="3200" height="2000" alt="Screenshot (603)" src="https://github.com/user-attachments/assets/269e2664-d4eb-45eb-9042-a27f47481e86" />
+
+4.Nginx Reverse Proxy                                                                                                                                                                                                         
+-Set up Nginx as a reverse proxy.                                                                                                                                                                                            
+-The entire application should be accessible via port 80 (HTTPS and domain mapping not required).                                                                                                                                
+<img width="3200" height="2000" alt="Screenshot (610)" src="https://github.com/user-attachments/assets/c13d9925-4fbb-4389-a5eb-afea488cd326" />
+<img width="3200" height="2000" alt="Screenshot (609)" src="https://github.com/user-attachments/assets/896ecd98-62d8-4294-b508-9bd6d21cd646" />
+<img width="3200" height="2000" alt="Screenshot (608)" src="https://github.com/user-attachments/assets/c1029d91-8506-4ecd-b7fa-f78689b70a58" />
