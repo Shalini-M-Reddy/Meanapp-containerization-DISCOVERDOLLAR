@@ -8,7 +8,6 @@ A Full-stack MEAN(MongoDB, Express.js, Angular, Node.js) application built with 
 - `docker-compose.yml` — Compose file (MongoDB, backend, frontend, Nginx)
 - `nginx/default.conf` — Nginx reverse proxy config
 - `.github/workflows/ci-cd.yml` — GitHub Actions workflow (build, push, deploy)
-
 ---
 ## Prerequisites
 - Git installed
