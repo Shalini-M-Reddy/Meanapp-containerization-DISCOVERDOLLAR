@@ -18,6 +18,8 @@ A Full-stack MEAN(MongoDB, Express.js, Angular, Node.js) application built with 
 - 
 ---
 ## Local setup & test
+
+
 1. Clone the repo (if not already):
 ```bash
 git clone https://github.com/<your-username>/<your-repo>.git
@@ -95,13 +97,7 @@ mean-app/
 <img width="3200" height="2000" alt="Screenshot (608)" src="https://github.com/user-attachments/assets/c1029d91-8506-4ecd-b7fa-f78689b70a58" />
 
 3.Prepare VM for deployment
- -SSH into VM: ssh user@vm_ip                                                                                                                                                                                                 -Install Docker & Docker Compose (Ubuntu example): sudo apt update -y                                                                                                                                                       
-                                                    sudo apt install -y docker.io docker-compose                                                                                                                             
-                                                    sudo systemctl enable --now docker                                                                                                                                       
-                                                    sudo usermod -aG docker $USER                                                                                                                                             -Clone repo on VM (or use scp to copy files): cd ~mkdir -p mean-app                                                                                                                                                         
-                                               cd mean-app                                                                                                                                                                   
-                                               git clone https://github.com/<your-username>/<your-repo>.git .
--Start containers on VM (first time): docker-compose pull                                                                                                                                                                    
-                                      docker-compose up -d --build
+-SSH into VM
+-Install Docker & Docker Compose (Ubuntu example)                                                                                                                                                                            -Clone repo on VM (or use scp to copy files)                                                                                                                                                                  
+-Start containers on VM (first time)
 -Verify: docker ps                                                                                                                                                                                                           
-         curl http://localhost/
