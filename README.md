@@ -1,9 +1,9 @@
 # MEAN Stack Application
 A Full-stack MEAN(MongoDB, Express.js, Angular, Node.js) application built with scalable architecture and production-ready practices. This project follows modular coding standards, secure API design, and clean UI patterns suitable for real-world deployment.
 
-1.Repository Setup
--Create a new GitHub repository for this project
--Push the complete code to the repository.
+1.Repository Setup                                                                                                                                                                                                            
+-Create a new GitHub repository for this project                                                                                                                                                                              
+-Push the complete code to the repository.                                                                                                                                                                                    
 
 ## Features
 ### **Frontend (Angular)**
