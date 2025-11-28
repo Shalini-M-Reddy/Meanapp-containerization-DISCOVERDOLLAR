@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:6                # Official MongoDB image
+    container_name: mongo-db
+    restart: unless-stopped
+    ports:
+      - "27017:27017"            # Expose MongoDB port
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+      - mongo-data:/data/db      # Persist MongoDB data
+
+  backend:
+    build: ./backend
+    container_name: mean-backend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      MONGO_URL: mongodb://root:example@mongo:27017/
+    depends_on:
+      - mongo
+
+  frontend:
+    build: ./frontend
+    container_name: mean-frontend
+    restart: unless-stopped
+    ports:
+      - "4200:4200"
+    depends_on:
+      - backend
+
+volumes:
+  mongo-data:
