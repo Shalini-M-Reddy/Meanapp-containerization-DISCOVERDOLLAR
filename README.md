@@ -76,3 +76,6 @@ mean-app/
 <img width="3200" height="2000" alt="Screenshot (610)" src="https://github.com/user-attachments/assets/c13d9925-4fbb-4389-a5eb-afea488cd326" />
 <img width="3200" height="2000" alt="Screenshot (609)" src="https://github.com/user-attachments/assets/896ecd98-62d8-4294-b508-9bd6d21cd646" />
 <img width="3200" height="2000" alt="Screenshot (608)" src="https://github.com/user-attachments/assets/c1029d91-8506-4ecd-b7fa-f78689b70a58" />
+
+
+Set up a new Ubuntu virtual machine on any cloud platform (AWS, Azure, or similar).                                                                                                                                              Failed to do this step because i dont have subscription for any cloud.
