@@ -1,4 +1,4 @@
-<img width="3200" height="2000" alt="Screenshot (595)" src="https://github.com/user-attachments/assets/1b791923-d152-4944-8fec-9af9d37480fa" /># MEAN Stack Application
+# MEAN Stack Application
 A Full-stack MEAN(MongoDB, Express.js, Angular, Node.js) application built with scalable architecture and production-ready practices. This project follows modular coding standards, secure API design, and clean UI patterns suitable for real-world deployment.
 
 1.Repository Setup
@@ -50,16 +50,16 @@ A Full-stack MEAN(MongoDB, Express.js, Angular, Node.js) application built with 
 <img width="3200" height="2000" alt="Screenshot (599)" src="https://github.com/user-attachments/assets/3f20f004-cb50-4c95-bfad-c44bf9214393" />
 <img width="3200" height="2000" alt="Screenshot (598)" src="https://github.com/user-attachments/assets/1f0e3d8c-3d52-4dfc-ad30-87ce680025ee" />
 
-mean-app/
-│
-├── backend/
-│   ├── Dockerfile
-│   └── (Node.js/Express app files)
-│
-├── frontend/
-│   ├── Dockerfile
-│   └── (Angular/React app files)
-│
-└── docker-compose.yml(with database set up)
+mean-app/                                                                                                                                                                                                                     
+│                                                                                                                                                                                                                             
+├── backend/                                                                                                                                                                                                                  
+│   ├── Dockerfile                                                                                                                                                                                                            
+│   └── (Node.js/Express app files)                                                                                                                                                                                           
+│                                                                                                                                                                                                                             
+├── frontend/                                                                                                                                                                                                                 
+│   ├── Dockerfile                                                                                                                                                                                                            
+│   └── (Angular/React app files)                                                                                                                                                                                             
+│                                                                                                                                                                                                                             
+└── docker-compose.yml(with database set up)                                                                                                                                                                                  
 
 3.CI/CD Pipeline Configuration
